@@ -1,3 +1,4 @@
+scene.setBackgroundColor(3)
 let Phil = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
