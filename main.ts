@@ -127,7 +127,7 @@ function holeTwo () {
         `)
     flag.setPosition(131, 62)
     phil.setPosition(6, 97)
-    golfball = darts.create(img`
+    golfball2 = darts.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -147,7 +147,7 @@ function holeTwo () {
         `, SpriteKind.golfball)
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    golfball.throwDart()
+    golfball2.throwDart()
     pause(3500)
     while (scoobydoo == true) {
         if (madeshot == 1) {
@@ -292,7 +292,7 @@ function holeOne () {
 }
 let scoobydoo = false
 let flag: Sprite = null
-let golfball: Dart = null
+let golfball2: Dart = null
 let phil: Sprite = null
 let madeshot = 0
 tiles.setCurrentTilemap(tilemap`level1`)
@@ -315,7 +315,7 @@ phil = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-golfball = darts.create(img`
+golfball2 = darts.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -351,7 +351,7 @@ flag = sprites.create(img`
     . . . . . . 1 f 1 . . . . . . . 
     . . . . . . 1 1 1 . . . . . . . 
     `, SpriteKind.hole)
-golfball.setTrace()
-golfball.controlWithArrowKeys()
+golfball2.setTrace()
+golfball2.controlWithArrowKeys()
 scoobydoo = true
 holeOne()
