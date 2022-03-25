@@ -328,7 +328,8 @@ let flag: Sprite = null
 let golfball: Dart = null
 let phil: Sprite = null
 let madeshot = 0
-game.showLongText("Welcome to ONESHOT GOLF! There are three holes you have to make each one in one shot! Use the arrow keys to aim and A to throw.", DialogLayout.Center)
+let usename = game.askForString("What is your first name?")
+game.showLongText("Hello " + usename + " Welcome to ONESHOT GOLF! There are three holes you have to make each one in one shot! Use the arrow keys to aim and A to throw.", DialogLayout.Center)
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
